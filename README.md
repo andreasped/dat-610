@@ -2,12 +2,12 @@
 
 ## Overview
 Evaluate 5g latency and throughput under environmental conditions like noise, rain, and urban settings by testing different paramters:
-- Modulation Schemes: QPSK to 64-QAM
-- Antenna Configurations: Single-Antenna (SISO) vs MIMO (2x2, 4x4 antenna arrays)
+- **Modulation Schemes:** QPSK to 64-QAM
+- **Antenna Configurations:** Single-Antenna (SISO) vs MIMO (2x2, 4x4 antenna arrays)
 
 ## Parameters
 - **Fixed Parameters:**
-    - **Transmit Power:** 5 watts, adjustable as needed
+    - **Transmit Power:** 5 watts
     - **Frequency:** 28 GHz (mmWave)
 - **Antenna Heights:**
     - **Transmitter Height:** 30m
@@ -35,3 +35,12 @@ function variableParams = defineVariableParameters()
     variableParams.antennaConfigs = {'SISO', 'MIMO_2x2', 'MIMO_4x4'};
 end
 ```
+
+## Implementation Steps
+1. Initialize parameters and enviroment
+2. Select antenna
+3. Select modulation scheme
+4. Select enviromental conditions
+5. Transmit and receive signal
+6. Calculate performance metric(s)
+7. Plot and evaluate results
