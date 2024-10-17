@@ -22,7 +22,7 @@ Evaluate 5g latency and throughput under environmental conditions like noise, ra
 function fixedParams = defineFixedParameters()
     fixedParams.carrierFreq = 28e9; % 28 GHz
     fixedParams.bandwidth = 100e6; % 100 MHz
-    fixedParams.txPower_dBm = 30; % 30 dBm
+    fixedParams.txPower_W = 5; % 5 Watts
     fixedParams.h_tx = 30; % 30 meters
     fixedParams.h_rx = 1.5; % 1.5 meters
     fixedParams.numBits = 1e6; % Number of bits to transmit
